@@ -1,7 +1,7 @@
 let Points = 0
    function AddPoint() {
       Points = "This is the variable's content.";
-      var textboxElement = document.getElementById("PointsCounter");
+      document.getElementById("PointsCounter").value = Points;
       textboxElement.value = Points;
     }
 function ScriptAlert() {
