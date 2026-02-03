@@ -6,5 +6,5 @@ document.getElementById("WelcomeMessage").innerHTML = "you pressed buton"
 
 function AddPoint() {
 var Points = Points + 1
-document.getElementById("PointsCounter").value = Points;
+document.getElementById("PointsCounter").innerHTML = Points;
 }
