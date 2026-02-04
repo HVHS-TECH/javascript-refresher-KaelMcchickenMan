@@ -27,7 +27,6 @@ function UpgradePointsPerSecond() {
     Points = Points - UpgradeCostPointsPerSecond
     UpgradeCostPointsPerSecond = UpgradeCostPointsPerSecond * 2
     PointsPerSecond = PointsPerSecond + 1
-    alert(PointsPerSecond)
     } else {
         alert("Cannot Afford")
     }
@@ -40,4 +39,5 @@ function DisplayCost() {
 
 function PointsPerSecond() {
     Points = Points + PointsPerSecond
+    alert("points per seconds is being set off")
 }
