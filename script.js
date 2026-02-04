@@ -24,5 +24,5 @@ function UpgradePoint() {
 }
 
 function DisplayCost() {
-    document.getElementById("PointsPerClickCost").innerHTML = UpgradeCost
+    document.getElementById("PointsPerClickCost").innerHTML = "Upgrade Cost: " + UpgradeCost
 }
