@@ -2,7 +2,8 @@ var Points = 0
 var PointsPerClick = 1
 var UpgradeCost = 10
 
-setInterval(() => { DisplayCost()}, 1000);
+setInterval(() => { DisplayCost()}, 100);
+setInterval(() => {document.getElementById("PointsCounter").innerHTML = Points}, 100);
 
 function ScriptAlert() {
 document.getElementById("WelcomeMessage").innerHTML = "you pressed buton"
@@ -10,7 +11,6 @@ document.getElementById("WelcomeMessage").innerHTML = "you pressed buton"
 
 function AddPoint() {
 Points = Points + PointsPerClick
-document.getElementById("PointsCounter").innerHTML = Points
 }
 
 function UpgradePoint() {
