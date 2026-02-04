@@ -10,6 +10,6 @@ Points = Points + PointsPerClick
 document.getElementById("PointsCounter").innerHTML = Points
 }
 
-function UpgradePoints() {
+function UpgradePoint() {
 PointsPerClick = PointsPerClick + 1
 }
