@@ -4,7 +4,7 @@ var UpgradeCost = 10
 var UpgradeCostPointsPerSecond = 25
 var PointsPerSecond = 0
 setInterval(() => { DisplayCost()}, 100);
-setInterval(() => { PointsPerSecondFunction()}, 100);
+setInterval(() => { PointsPerSecondFunction()}, 1000);
 setInterval(() => {document.getElementById("PointsCounter").innerHTML = Points}, 100);
 
 
@@ -40,5 +40,5 @@ function DisplayCost() {
 
 function PointsPerSecondFunction() {
     Points = Points + PointsPerSecond
-    alert("points per seconds is being set off")
+
 }
