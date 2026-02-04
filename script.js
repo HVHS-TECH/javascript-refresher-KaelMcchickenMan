@@ -1,10 +1,15 @@
 var Points = 0
+var PointsPerClick = 1
 
 function ScriptAlert() {
 document.getElementById("WelcomeMessage").innerHTML = "you pressed buton"
 }
 
 function AddPoint() {
-Points = Points + 1
+Points = Points + PointsPerClick
 document.getElementById("PointsCounter").innerHTML = Points
+}
+
+function UpgradePoints() {
+PointsPerClick = PointsPerClick + 1
 }
