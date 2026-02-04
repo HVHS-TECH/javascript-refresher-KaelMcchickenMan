@@ -5,7 +5,6 @@ var UpgradeCostPointsPerSecond = 25
 var PointsPerSecond = 0
 setInterval(() => { DisplayCost()}, 100);
 setInterval(() => { PointsPerSecondFunction()}, 1000);
-setInterval(() => {document.getElementById("PointsCounter").innerHTML = Points}, 100);
 
 
 
@@ -36,6 +35,9 @@ function UpgradePointsPerSecond() {
 function DisplayCost() {
     document.getElementById("PointsPerClickCost").innerHTML = "Upgrade Cost: " + UpgradeCost
     document.getElementById("PointsPerSecondCost").innerHTML = "Upgrade Cost: " + UpgradeCostPointsPerSecond
+    document.getElementById("PointsCounter").innerHTML = Points
+    document.getElementById("PPCCounter").innerHTML = PointsPerClick
+    document.getElementById("PPSCounter").innerHTML = PointsPerSecond
 }
 
 function PointsPerSecondFunction() {
